@@ -1,5 +1,4 @@
 ## The Cool Company 
----------------
 ## **Fridgify** <br/>Software Requirements Specification <br/> For Fridge Content Tracking <br/> Version 1.0
 
 | **Date** | **Version** | **Description** | **Author** |

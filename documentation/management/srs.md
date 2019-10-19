@@ -2,15 +2,11 @@
 ---------------
 ## **Fridgify** <br/>Software Requirements Specification <br/> For Fridge Content Tracking <br/> Version 1.0
 
-------------------
-
 | **Date** | **Version** | **Description** | **Author** |
 | -------- | ----------- | --------------- | ---------- |
 | 19.10.19 | 1.0 | Filling all information | Duc Vo Ngoc |
 | - | - | - | -|
 | - | - | - | -|
-
------------
 
 ## Table of Contents
 
@@ -58,7 +54,6 @@
 
 <a href="#intro"></a>
 ## 1. Introduction
------------------------
 <a href="#purpose"></a>
 ### **Purpose**
 
@@ -131,7 +126,6 @@ stories, etc.
 
 <a href="#overdesc"></a>
 ## 2. Overall Description
---------------------
 ### **Product Perspective**
 
 This system is going to consist of two parts: one mobile application and
@@ -403,7 +397,6 @@ Manual security tests needs to be performed regulary.
 
 <a href="#si"></a>
 ## Supporting Information
-------------------
 
 [Fridgify - Blog](https://fridgify.donkz.dev/) - The Fridgify Blog with
 all news regarding Fridgify.

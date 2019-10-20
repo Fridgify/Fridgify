@@ -10,8 +10,9 @@ So without further ado we present you our Software Requirements Specification an
 https://github.com/DonkeyCo/Fridgify/blob/documentation/documentation/management/Overall%20Use%20Case%20Diagram.pdf)
 
 ![Overall Use Case Diagram](https://github.com/DonkeyCo/Fridgify/blob/documentation/documentation/management/Overall%20Use%20Case%20Diagram.png "Overall Use Case Diagram")
-
+\
 We are thrilled to hear your thoughts about the current state of the **Fridgify** project.
+\
 \
 *Stay cool. Stay organised*
 \

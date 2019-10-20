@@ -85,7 +85,7 @@ users.
   User |               Someone who interacts with the mobile phone application
   Device |             Device, which allows users to keep track of their fridge contents (e.g. mobile phone, Raspberry Pi)
   REST    |            **RE**presentational **S**tate **T**ransfer is an architectural style for distributed hypermedia systems \[1\]
-  API       |          Application Programming Interface connects to *client* and *server*. \[2\]
+  API       |          Application Programming Interface connects *client* and *server*. \[2\]
   Application Store |  A mobile application store, where users can get the application (e.g. App Store, Play Store)
   OS              |    Operating System
   Android         |    Google's OS for mobile phones \[3\]
@@ -104,7 +104,7 @@ Here are documents and links which could be helpful to understand
 
 \[A\] Fridgify Blog: <https://fridgify.donkz.dev/>\
 \[B\] Fridgify GitHub: <https://github.com/DonkeyCo/Fridgify>\
-\[C\] UML-Diagram: [https://drive.google.com/file/d/1vWaFPm-F_uAU51sVGcWN9OgbxoCAegrX/view](Google Drive) OR [GitHub Blob](https://github.com/DonkeyCo/Fridgify/blob/documentation/documentation/management/Overall%20Use%20Case%20Diagram.pdf)
+\[C\] UML-Diagram: [Google Drive](https://drive.google.com/file/d/1vWaFPm-F_uAU51sVGcWN9OgbxoCAegrX/view) OR [GitHub Blob](https://github.com/DonkeyCo/Fridgify/blob/documentation/documentation/management/Overall%20Use%20Case%20Diagram.pdf)
 
 ### **Overview**
 

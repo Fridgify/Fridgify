@@ -4,7 +4,7 @@
 | **Date** | **Version** | **Description** | **Author** |
 | -------- | ----------- | --------------- | ---------- |
 | 19.10.19 | 1.0 | Filling all information | Duc Vo Ngoc |
-| - | - | - | -|
+| 20.10.19 | 1.1 | Finalizing and filling in missing information | Duc Vo Ngoc |
 | - | - | - | -|
 
 ## Table of Contents
@@ -104,7 +104,7 @@ Here are documents and links which could be helpful to understand
 
 \[A\] Fridgify Blog: <https://fridgify.donkz.dev/>\
 \[B\] Fridgify GitHub: <https://github.com/DonkeyCo/Fridgify>\
-\[C\] UML-Diagram:
+\[C\] UML-Diagram: <https://github.com/DonkeyCo/Fridgify/blob/documentation/documentation/management/Overall%20Use%20Case%20Diagram.pdf>
 
 ### **Overview**
 
@@ -277,12 +277,10 @@ seconds and a maximum processing time of 8 to 10 seconds.
 
 #### Coding Standards
 
-The python source code of the application must follow the PEP 8 Style
-Guide to guarantee readability and one style of code written by
-multiple authors.
-
-####  Coding Conventions
-To be decided.
+The python source code of the application must follow the [PEP 8 Style
+Guide](https://www.python.org/dev/peps/pep-0008/) to guarantee readability and one style of code written by
+multiple authors.\
+The Flutter and Dart source code follows the official [Style Guide for Flutter](https://github.com/flutter/flutter/wiki/Style-guide-for-Flutter-repo) as well as the official [Style Guide for Dart](https://dart.dev/guides/language/effective-dart/style) to guarentee readability and one style of code written by multiple authors.
 
 ### **Design Constraints**
 --------------
@@ -308,18 +306,22 @@ follow the [Fridgify Blog](https://fridgify.donkz.dev/).
 
 The following components were purchased:\
 - Root Server (60GB SSD, 16GB RAM, Intel Xeon Gold 6140 / 6320)
+- Domain
 
 ### **Interfaces**
 --------------
 
 #### User Interfaces
 
-To be decided.
+The following user interfaces are available:
+* iOS Application
+* Android Application
 
 #### **Hardware Interfaces**
 
-The backend can be used by a Raspberry Pi to register items. This could
-be implemented in the future.
+Fridgify can be combined with Smart Home Systems, such as Alexa, Google Assistant, Siri.\
+The backend shall be used by a Raspberry Pi to register items. 
+These hardware interfaces can be implemented in the future.
 
 #### **Software Interfaces**
 
@@ -337,7 +339,8 @@ to HTTPS.
 ### **Licensing Requirements**
 --------------
 
-To be decided.
+**Fridgify** is being distributed under the *Creative Commons Attribution-NonCommercial-NoDerivs (CC-BY-NC-ND) License*.\
+You find more information [here](http://creativecommons.org/licenses/by-nc-nd/4.0/).
 
 ### **Legal, Copyright, and Other Notices**
 --------------
@@ -365,6 +368,8 @@ Cross-site request forgery (CSRF)
 Manual security tests needs to be performed regulary.
 
 ## Supporting Information
+
+[UML Diagram](https://github.com/DonkeyCo/Fridgify/blob/documentation/documentation/management/Overall%20Use%20Case%20Diagram.pdf) - UML Diagram for Fridgify
 
 [Fridgify - Blog](https://fridgify.donkz.dev/) - The Fridgify Blog with
 all news regarding Fridgify.

@@ -24,7 +24,7 @@
         4. [Notification Service](#notification-service)
     2. [Usability](#usability)
         1. [Ease of Use](#ease-of-use)
-        2. [Fridges](#fridges)
+        2. [Fridges](#fridge-management)
     3. [Reliability](#reliability)
         1. [Code Coverage](#code-coverage)
         2. [Server Reliability](#server-reliability)
@@ -238,7 +238,7 @@ clicks.\
 Looking at the list of items should only require a maximum of 2 to 3
 clicks.
 
-### Fridges
+#### Fridge Management
 
 Users should be able to change a fridge easily. They should be able to
 change registered fridges with a maximum of 3 clicks.

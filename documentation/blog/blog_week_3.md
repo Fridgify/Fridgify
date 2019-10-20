@@ -1,6 +1,6 @@
 # Week 3 - Software Requirements Specification
 
-A project can only achieve astonishing success if the planning aspect is also done in a lengthily manner. As of this week we are happy to present you our Software Requirements Specification. It aims to keep the **Fridgify** team organised and focused to acchieve something great. 
+A project can only achieve astonishing success if the planning aspect is also done in a lengthily manner. As of this week we are happy to present you our Software Requirements Specification. It aims to keep the **Fridgify** team organised and focused to achieve greatness. 
 \
 But the most important factor for us are our users. We want to give them all functionalities they deserve. We created an Overall Use Case Diagram to keep up to this promise. 
 \

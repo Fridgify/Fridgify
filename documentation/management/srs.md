@@ -1,5 +1,5 @@
 ## The Cool Company 
-## **Fridgify** <br/>Software Requirements Specification <br/> For Fridge Content Tracking <br/> Version 1.0
+## **Fridgify** <br/>Software Requirements Specification <br/> For Fridge Content Tracking <br/> Version 1.1
 
 | **Date** | **Version** | **Description** | **Author** |
 | -------- | ----------- | --------------- | ---------- |
@@ -104,7 +104,7 @@ Here are documents and links which could be helpful to understand
 
 \[A\] Fridgify Blog: <https://fridgify.donkz.dev/>\
 \[B\] Fridgify GitHub: <https://github.com/DonkeyCo/Fridgify>\
-\[C\] UML-Diagram: <https://github.com/DonkeyCo/Fridgify/blob/documentation/documentation/management/Overall%20Use%20Case%20Diagram.pdf>
+\[C\] UML-Diagram: [https://drive.google.com/file/d/1vWaFPm-F_uAU51sVGcWN9OgbxoCAegrX/view](Google Drive) OR [GitHub Blob](https://github.com/DonkeyCo/Fridgify/blob/documentation/documentation/management/Overall%20Use%20Case%20Diagram.pdf)
 
 ### **Overview**
 
@@ -369,7 +369,9 @@ Manual security tests needs to be performed regulary.
 
 ## Supporting Information
 
-[UML Diagram](https://github.com/DonkeyCo/Fridgify/blob/documentation/documentation/management/Overall%20Use%20Case%20Diagram.pdf) - UML Diagram for Fridgify
+[UML Diagram - GitHub](https://github.com/DonkeyCo/Fridgify/blob/documentation/documentation/management/Overall%20Use%20Case%20Diagram.pdf) - UML Diagram for Fridgify (static version - GitHub)
+
+[UML Diagram - Google Drive](https://github.com/DonkeyCo/Fridgify/blob/documentation/documentation/management/Overall%20Use%20Case%20Diagram.pdf) - UML Diagram for Fridgify (dynamic version - Google Drive)
 
 [Fridgify - Blog](https://fridgify.donkz.dev/) - The Fridgify Blog with
 all news regarding Fridgify.

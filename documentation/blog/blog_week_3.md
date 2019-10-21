@@ -7,7 +7,7 @@ But the most important factor for us are our users. We want to give them all fun
 So without further ado we present you our Software Requirements Specification and the Overall Use Case Diagram.
 - [Software Requirements Specification](maiu)
 - [Overall Use Case Diagram](
-https://github.com/DonkeyCo/Fridgify/blob/documentation/documentation/management/Overall%20Use%20Case%20Diagram.pdf)
+https://github.com/DonkeyCo/Fridgify/blob/documentation/documentation/management/Overall%20Use%20Case%20Diagram.png)
 
 ![Overall Use Case Diagram](https://github.com/DonkeyCo/Fridgify/blob/documentation/documentation/management/Overall%20Use%20Case%20Diagram.png "Overall Use Case Diagram")
 \

@@ -16,7 +16,7 @@ The user needs to log into the app. He can then press and hold on one fridge. A 
 
 ### 2.1.1 Activity Diagram
 
-![Activity diagram get fridges](https://github.com/DonkeyCo/Fridgify/blob/documentation/documentation/uc/deleteFridge/deleteFridgeActivityDiagram.png)
+![Activity diagram get fridges](https://github.com/DonkeyCo/Fridgify/blob/documentation/documentation/uc/removeFridge/deleteFridgeActivityDiagram.png)
 
 ### 2.1.2 Mock Up
 

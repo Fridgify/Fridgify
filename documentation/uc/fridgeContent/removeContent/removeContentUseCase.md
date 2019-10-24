@@ -15,25 +15,53 @@ Every user is able to manage his own fridge. Managing a fridge and its content r
 In the "Fridge Content Overview" an user is able remove specific items. To do so he has to set the content's volume to zero, implying that it is empty. Every empty item is automatically deleted, after securing, that there was an actual intent to delete said item. After successfully deleting the item, the user is redirected to an updated version of the "Fridge Content Overview".
 
 
-### 2.1.1 Activity Diagram
+#### 2.1.1 Activity Diagram
 
 ![Remove Item from Fridge](./ri_ad.png)
 
-### 2.1.2 Mock Up
+#### 2.1.2 Mock Up
 
-Screenshot if available
+![Content Overview](../images/content_overview.png)
 
-### 2.2 Alternativ Flow
+#### 2.1.3 Feature File
 
-n/a
+``` .feature
+Feature: Remove Item
 
-### 2.2.1 Activity Diagram
+Scenario: Remove Item manually - Verification
+    Given user is authenticated for fridge
+    And fridge is not empty
+    And chosen item exists
+    When user changes item volume of chosen item to zero
+    Then show message box asking if user is sure to remove item
 
-n/a
+Scenario: Remove Item manually - Confirmed
+    Given user is authenticated for fridge
+    And fridge is not empty
+    And chosen item exists
+    And verification message box is shown
+    When user confirmes removal
+    Then send delete task to backend
+    Then redirect to "Content Overview"-Page
+    Then update list
 
-### 2.2.2 Mock Up
+Scenario: Remove Item manually - Canceled
+    Given user is authenticated for fridge
+    And fridge is not empty
+    And chosen item exists
+    And verification message box is shown
+    When selects "Cancel"
+    Then close message box
+    And set volume to value before change
 
-n/a
+Scenario: Remove Item automatically (expired)
+    Given item exists
+    And fridge is no empty
+    When item expired
+    Then send notification to user - "Item A expired"
+    And send delete action to backend
+    And update cached list if necessary
+```
 
 ## 3. Special Requirements
 

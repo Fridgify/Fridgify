@@ -20,19 +20,39 @@ After choosing a fridge in the 'fridge overview', the user is redirected to a vi
 
 #### 2.1.2 Mock Up
 
-Screenshot if available
+The following images are wireframes for the application. In future they will be replaced with the according mock ups\
+![Fridges Overview](../images/fridge_overview.png) \
+Fridges Overview \
+\
+![Content Overview](../images/content_overview.png) \
+Content Overview
 
-### 2.2 Alternativ Flow
+#### 2.1.3 Feature File
 
-n/a
+``` .feature
+Feature: Get Fridge Content
 
-#### 2.2.1 Activity Diagram
+Scenario: Get Fridge Content, user is authenticated
+    Given user is authenticated for fridge
+    And fridge is not empty
+    When user is navigates to "Content Overview"-Page
+    Then load all items
+    And show items
 
-n/a
+Scenario: Get Fridge Content, user is not authenticated
+    Given user is not authenticated for fridge
+    When user navigates to "Content Overview"-Page
+    Then redirect to "Fridges Overview"
+    And send error messsage
 
-#### 2.2.2 Mock Up
-
-n/a
+Scenario: Get Fridge Content, fridge is empty
+    Given user is authenticated
+    And fridge is empty
+    When user navigates to "Content Overview"-Page
+    Then show empty list
+    And show add item (manually and via scanning) button
+    And show text -> "Fridge is currently empty"
+```
 
 ## 3. Special Requirements
 

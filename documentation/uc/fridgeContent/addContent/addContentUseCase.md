@@ -32,25 +32,46 @@ An item can be added by scanning the barcode of an item. The user chooses the bu
 
 ### 2.1.2 Mock Up
 
-Screenshot if available
+![Content Overview](../images/content_overview.png)
+![Add Content Manually](../images/add_item_man.png)
 
-### 2.2 Alternativ Flow
+### 2.1.3 Feature File
 
-Description here
-Can be n/a
+``` .feature
+Feature: Add Item
 
-### 2.2.1 Activity Diagram
+Scenario: Choose "Add Item Manually"
+    When user is on "Content Overview"-Page
+    And user clicks on "Add Item Manually"-Button
+    Then show input box
 
-UML here
-Can be n/a
+Scenario: Enter Valid Data
+    Given user filled in item name, unit, amount, expiry date correctly
+    And user is still on "Content Overview"-Page
+    When user submits form
+    Then send data to backend
+    And show new list
 
-### 2.2.2 Mock Up
+Scenario: Enter Incomplete Data
+    Given user did not fill all required input fields
+    When user submits form
+    Then show error message
+    And mark missing boxes
+    And stay in view
 
-Screenshot if available
+Scenario: Enter Invalid Data
+    Given user filled input boxes with incorrect value (expiry date as string)
+    When user submits form
+    Then show error message
+    And highlight wrong input
+    And stay in view
+```
 
 ## 3. Special Requirements
 
 n/a
+
+## 4. Preconditions
 
 ### 4.1 Authentication
 

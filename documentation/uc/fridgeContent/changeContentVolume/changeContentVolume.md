@@ -16,11 +16,11 @@ After the user swipes left or right on an item in the fridge overview the curren
 
 #### 2.1.1 Activity Diagram
 
-![Activity Diagram - Change Fridge Content Volume](../../images/changeContentVolumeMockUp.png)
+![Activity Diagram - Change Fridge Content Volume](changeContentVolume.png)
 
 #### 2.1.2 Mock Up
 
-Screenshot if available
+![Activity Diagram - Change Fridge Content Volume](../../images/changeContentVolumeMockUp.png)
 
 ### 2.2 Alternativ Flow
 

@@ -20,7 +20,7 @@ The user needs to log into the app. When clicking on the add panel a popup is di
 
 ### 2.1.2 Mock Up
 
-**n/a**
+![Join Fridge](../images/GetFridgeMockUp.png)
 
 ## 3. Special Requirements
 

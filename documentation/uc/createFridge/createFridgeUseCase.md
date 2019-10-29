@@ -20,7 +20,8 @@ The user needs to log into the app. When clicking on the add panel a popup is di
 
 ### 2.1.2 Mock Up
 
-**n/a**
+![Create Fridge Mockup](../images/createFridgeMockUp.png)) \
+Fridges Overview \
 
 ## 3. Special Requirements
 

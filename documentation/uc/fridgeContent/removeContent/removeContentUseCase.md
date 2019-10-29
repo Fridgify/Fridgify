@@ -21,7 +21,7 @@ In the "Fridge Content Overview" an user is able remove specific items. To do so
 
 #### 2.1.2 Mock Up
 
-![Content Overview](../images/content_overview.png)
+![Content Overview](../../images/removeContentVolumeMockUp.png))
 
 #### 2.1.3 Feature File
 

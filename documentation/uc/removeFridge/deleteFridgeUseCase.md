@@ -20,7 +20,7 @@ The user needs to log into the app. He can then press and hold on one fridge. A 
 
 ### 2.1.2 Mock Up
 
-**n/a**
+![Remove Item from Fridge](../images/DeleteFridgeMockUp.png)
 
 ## 3. Special Requirements
 

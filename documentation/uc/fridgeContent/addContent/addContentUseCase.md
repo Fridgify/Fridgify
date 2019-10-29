@@ -32,8 +32,8 @@ An item can be added by scanning the barcode of an item. The user chooses the bu
 
 ### 2.1.2 Mock Up
 
-![Content Overview](../images/content_overview.png)
-![Add Content Manually](../images/add_item_man.png)
+![Content Overview](../../images/changeContentVolumeMockUp.png)
+![Add Content Manually](../../images/addContentMockUp.png)
 
 ### 2.1.3 Feature File
 

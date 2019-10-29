@@ -20,17 +20,10 @@ After choosing a fridge in the 'fridge overview', the user is redirected to a vi
 
 #### 2.1.2 Mock Up
 
-The following images are wireframes for the application. In future they will be replaced with the according mock ups\
 ![Fridges Overview](../../images/GetFridgeMockUp.png) \
 Fridges Overview \
 \
 ![Content Overview](../../images/changeContentVolumeMockUp.png) \
-Content Overview
-
-![Fridges Overview Mockup](../images/fridge_overview.png) \
-Fridges Overview \
-\
-![Content Overview Mockup](../images/content_overview.png) \
 Content Overview
 
 

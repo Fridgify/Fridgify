@@ -30,7 +30,7 @@ Content Overview
 #### 2.1.3 Feature File
 
 ##### Backend
-```.feature
+``` .feature
 Feature: Get Fridge Content - Test 2s
 
 Scenario: Get Fridge Content, user is authenticated

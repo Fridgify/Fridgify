@@ -29,6 +29,7 @@ Content Overview
 
 #### 2.1.3 Feature File
 
+##### Backend
 ``` .feature
 Feature: Get Fridge Content
 
@@ -53,6 +54,12 @@ Scenario: Get Fridge Content, fridge is empty
     And show add item (manually and via scanning) button
     And show text -> "Fridge is currently empty"
 ```
+
+##### Frontend
+``` .feature
+    To Be Written
+```
+
 
 ## 3. Special Requirements
 

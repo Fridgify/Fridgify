@@ -31,7 +31,7 @@ Content Overview
 
 ##### Backend
 ``` .feature
-Feature: Get Fridge Content Was soll das
+Feature: Get Fridge Content
 
 Scenario: Get Fridge Content, user is authenticated
     Given user is authenticated for fridge

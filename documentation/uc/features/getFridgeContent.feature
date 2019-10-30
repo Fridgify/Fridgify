@@ -1,4 +1,4 @@
-Feature: Get Fridge Content - Test 2s
+Feature: Get Fridge Content
 
 Scenario: Get Fridge Content, user is authenticated
     Given user is authenticated for fridge

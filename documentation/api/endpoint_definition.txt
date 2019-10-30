@@ -1,0 +1,197 @@
+"!" Are focused endpoints, which should be finished before semester ends
+
+
+Endpoint: /auth/
+    Register:
+        POST /auth/register/
+        | JSON
+        | - Benutzername: String
+        | - Password: String
+        Response:
+        | 201
+        | JSON
+        | - Auth-Token: String
+
+    !Login:
+        POST /auth/login/
+        | JSON
+        | - Benutzername: String
+        | - Password: String
+        Response:
+        | 200
+        | JSON
+        | - Auth-Token: String # Permanently saved
+
+
+    !Token:
+        GET /auth/token/
+        | HEADER
+        | - Auth-Token: String
+        Response:
+        | 200
+        | JSON:
+        | - Backend-Token: String
+        | - Validation Time: String
+
+Endpoint: /fridge/
+    !Get all Fridges:
+        GET /fridge/
+        | HEADER
+        | - Backend-Token: String
+        Response:
+        | 200
+        | JSON 
+        | - List of all Fridges: List of Objects
+        |       - Name: String
+        |       - Description: String
+        |       - Item Data: Object
+        |           - Expire Date: Date
+    
+Endpoint: /fridge/management/
+    Join Fridge:
+        POST /fridge/management/join/
+        | HEADER
+        | - Backend-Token: String
+        | JSON
+        | - Fridge-Id: String
+        | Response:
+        | 201
+        | "Joined"
+
+    !Create Fridge:
+        POST /fridge/management/create/
+        | HEADER
+        | - Backend-Token: String
+        | JSON
+        | - Fridge Name: String
+        | - Description: String
+        | Response
+        | 201
+        | "Created"        
+
+    Edit Fridge:
+        POST /fridge/management/
+        | HEADER
+        | - Backend-Token: String
+        | JSON
+        | - Fridge-Id: String
+        | - Name: String
+        | - Description: String
+        | Response
+        | 200
+        | JSON
+        | - Fridge-Name: String
+        | - Description: String
+
+    Remove Fridge:
+        DELETE /fridge/management/<fridge-id>
+        | HEADER
+        | - Backend-Token: String
+        | # Leaves Fridge, if Fridge group is empty delete fridge
+        | Reponse:
+        | 200
+        | "Left Successful"
+
+
+Endpoint: /fridge/item/
+    !Get Item:
+        GET /fridge/item/<barcode>&<store>
+        | HEADER
+        | - Backend-Token: String
+        Reponse:
+        | 200
+        | JSON:
+        | - Item-Name: String
+        | - Item-Description: String
+
+Endpoint: /fridge/content/
+    !Get Content:
+        GET /fridge/content/<fridge-id>
+        | HEADER
+        | - Backend-Token: String
+        | Response:
+        | 200
+        | JSON
+        | - List of Item Objects: List of Objects
+        |       - Item-Name: String
+        |       - Volume: Int
+        |       - Unit: String
+        |       - Expire Date: Date
+
+
+    !Add Item
+        POST /fridge/content/<fridge-id>/
+        | HEADER
+        | - Backend-Token: String
+        | JSON
+        | - Name: String
+        | - Description: String
+        | - Buy Date: Date
+        | - Expiration Date: Date
+        | - Amount: Int
+        | - Unit: String
+        | - Store: String
+        | Response
+        | 201
+        | "Added"
+
+    !Get Item information:
+        GET /fridge/content/<fridge-id>/<item-id>
+        | HEADER
+        | - Backend-Token: String
+        Reponse:
+        | 200
+        | JSON
+        | - Name: String
+        | - Description: String
+        | - Buy Date: Date
+        | - Expiration Date: Date
+        | - Amount: Int
+        | - Unit: String
+        | - Store: String
+    
+    !Remove Item:
+        DELETE /fridge/content/<fridge-id>/<item-id>
+        | HEADER
+        | - Backend-Token: String
+        | Response
+        | 200
+        | "Removed"
+
+    !Change Content Volume:
+        POST /fridge/content/<fridge-id>/<item-id>
+        | HEADER
+        | - Backend-Token: String
+        | JSON:
+        | - Volume: Int
+        | Response
+        | 200
+        | JSON
+        | - Name: String
+        | - Description: String
+        | - Buy Date: Date
+        | - Expiration Date: Date
+        | - Amount: Int
+        | - Unit: String
+        | - Store: String
+        
+Endpoint: /stores/
+    Get all stores:
+        GET /stores/
+        | HEADER
+        | - Backend-Token: String
+        | Response
+        | 200
+        | JSON
+        | - List of all Stores: List of Objects
+        |       - Name: String
+
+    Add new store:
+        POST /stores/
+        | HEADER
+        | - Backend-Token: String
+        | JSON
+        | - Name: String
+        | Response
+        | 201
+        | - "Added"

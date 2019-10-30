@@ -1,4 +1,4 @@
-Feature: Get Fridge Content - Please work
+Feature: Get Fridge Content Was soll das
 
 Scenario: Get Fridge Content, user is authenticated
     Given user is authenticated for fridge

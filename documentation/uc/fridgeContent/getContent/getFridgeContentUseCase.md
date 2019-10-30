@@ -30,7 +30,7 @@ Content Overview
 #### 2.1.3 Feature File
 
 ```.feature
-Feature: Get Fridge Content - Just for Testing absolutely great
+Feature: Get Fridge Content
 
 Scenario: Get Fridge Content, user is authenticated
     Given user is authenticated for fridge

@@ -29,8 +29,8 @@ Content Overview
 
 #### 2.1.3 Feature File
 
-``` .feature
-Feature: Get Fridge Content
+```.feature
+Feature: Get Fridge Content - Just for Testing absolutely great
 
 Scenario: Get Fridge Content, user is authenticated
     Given user is authenticated for fridge
@@ -43,7 +43,7 @@ Scenario: Get Fridge Content, user is not authenticated
     Given user is not authenticated for fridge
     When user navigates to "Content Overview"-Page
     Then redirect to "Fridges Overview"
-    And send error messsage
+    And send error message
 
 Scenario: Get Fridge Content, fridge is empty
     Given user is authenticated

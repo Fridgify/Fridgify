@@ -3,4 +3,4 @@
 	url = https://github.com/DonkeyCo/Fridgify_Frontend.git
 [submodule "backend"]
 	path = backend
-	url = https://github.com/DonkeyCo/Fridgify_Backend
+	url = https://github.com/DonkeyCo/Fridgify_Backend.git

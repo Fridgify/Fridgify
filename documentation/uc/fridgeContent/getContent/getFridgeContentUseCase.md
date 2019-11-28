@@ -30,17 +30,17 @@ Content Overview
 #### 2.1.3 Feature File
 
 ```gherkin
-    Feature: Content Screen
-  The User is on the fridge content screen
+Feature: Content Screen
+    The User is on the fridge content screen
 
-  Scenario: See the content
-    Given I see screen "fridge"
-    Then I have 5 items
+    Scenario: See the content
+        Given I see screen "fridge"
+        Then I have 5 items
 
-  Scenario: See content info
-    Given I see screen "fridge"
-    When I tap the "milk" label
-    Then I see popup "milkInfo"
+    Scenario: See content info
+        Given I see screen "fridge"
+        When I tap the "milk" label
+        Then I see popup "milkInfo"
 ```
 
 

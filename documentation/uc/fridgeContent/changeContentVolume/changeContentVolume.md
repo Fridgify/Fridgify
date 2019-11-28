@@ -23,7 +23,7 @@ After the user swipes left or right on an item in the fridge overview the curren
 ![Activity Diagram - Change Fridge Content Volume](../../images/changeContentVolumeMockUp.png)
 
 #### 2.1.3 Feature File
-```
+```gherkin
 Feature: Content Screen
   The User is on the fridge content screen
 

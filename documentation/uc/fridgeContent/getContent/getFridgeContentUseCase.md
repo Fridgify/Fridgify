@@ -29,35 +29,18 @@ Content Overview
 
 #### 2.1.3 Feature File
 
-##### Backend
-``` .feature
-Feature: Get Fridge Content
+```gherkin
+    Feature: Content Screen
+  The User is on the fridge content screen
 
-Scenario: Get Fridge Content, user is authenticated
-    Given user is authenticated for fridge
-    And fridge is not empty
-    When user is navigates to "Content Overview"-Page
-    Then load all items
-    And show items
+  Scenario: See the content
+    Given I see screen "fridge"
+    Then I have 5 items
 
-Scenario: Get Fridge Content, user is not authenticated
-    Given user is not authenticated for fridge
-    When user navigates to "Content Overview"-Page
-    Then redirect to "Fridges Overview"
-    And send error message
-
-Scenario: Get Fridge Content, fridge is empty
-    Given user is authenticated
-    And fridge is empty
-    When user navigates to "Content Overview"-Page
-    Then show empty list
-    And show add item (manually and via scanning) button
-    And show text -> "Fridge is currently empty"
-```
-
-##### Frontend
-``` .feature
-    To Be Written
+  Scenario: See content info
+    Given I see screen "fridge"
+    When I tap the "milk" label
+    Then I see popup "milkInfo"
 ```
 
 

@@ -5,6 +5,7 @@
 | -------- | ----------- | --------------- | ---------- |
 | 19.10.19 | 1.0 | Filling all information | Duc Vo Ngoc |
 | 20.10.19 | 1.1 | Finalizing and filling in missing information | Duc Vo Ngoc |
+| 28.11.19 | 1.2 | Add Use Cases to SRS | Duc Vo Ngoc |
 | - | - | - | -|
 
 ## Table of Contents
@@ -104,7 +105,8 @@ Here are documents and links which could be helpful to understand
 
 \[A\] Fridgify Blog: <https://fridgify.donkz.dev/>\
 \[B\] Fridgify GitHub: <https://github.com/DonkeyCo/Fridgify>\
-\[C\] UML-Diagram: [Google Drive](https://drive.google.com/file/d/1vWaFPm-F_uAU51sVGcWN9OgbxoCAegrX/view) OR [GitHub Blob](https://github.com/DonkeyCo/Fridgify/blob/documentation/documentation/management/Overall%20Use%20Case%20Diagram.pdf)
+\[C\] UML-Diagram: [Google Drive](https://drive.google.com/file/d/1vWaFPm-F_uAU51sVGcWN9OgbxoCAegrX/view) OR [GitHub Blob](https://github.com/DonkeyCo/Fridgify/blob/documentation/documentation/management/Overall%20Use%20Case%20Diagram.pdf)\
+\[D\] Authentication Explanation: [How Fridgify's Authentication works](https://github.com/DonkeyCo/Fridgify/blob/documentation/documentation/uc/authentication/authentication_system.md)
 
 ### **Overview**
 
@@ -224,6 +226,18 @@ data.
 The backend should send notifications to individual users. The
 notification service notifies users when an item is expiring, updating
 users of their current fridge status or empty items.
+
+##### Use Cases
+* [Use Case - Register](https://github.com/DonkeyCo/Fridgify/blob/documentation/documentation/uc/authentication/register.md)
+* [Use Case - Login](https://github.com/DonkeyCo/Fridgify/blob/documentation/documentation/uc/authentication/login.md)
+* [Use Case - Get Fridges](https://github.com/DonkeyCo/Fridgify/blob/documentation/documentation/uc/getFridges/getFridgesUseCase.md)
+* [Use Case - Create Fridge](https://github.com/DonkeyCo/Fridgify/blob/documentation/documentation/uc/createFridge/createFridgeUseCase.md)
+* [Use Case - Remove Fridge](https://github.com/DonkeyCo/Fridgify/blob/documentation/documentation/uc/removeFridge/deleteFridgeUseCase.md)
+* [Use Case - Join Fridge](https://github.com/DonkeyCo/Fridgify/blob/documentation/documentation/uc/joinFridge/joinFridgeUseCase.md)
+* [Use Case - Add Fridge Content](https://github.com/DonkeyCo/Fridgify/blob/documentation/documentation/uc/fridgeContent/addContent/addContentUseCase.md)
+* [Use Case - Remove Fridge Content](https://github.com/DonkeyCo/Fridgify/blob/documentation/documentation/uc/fridgeContent/removeContent/removeContentUseCase.md)
+* [Use Case - Get Fridge Content](https://github.com/DonkeyCo/Fridgify/blob/documentation/documentation/uc/fridgeContent/getContent/getFridgeContentUseCase.md)
+* [Use Case - Change Content Volume](https://github.com/DonkeyCo/Fridgify/blob/documentation/documentation/uc/fridgeContent/changeContentVolume/changeContentVolume.md)
 
 ### **Usability**
 -----------

@@ -22,6 +22,17 @@ The user needs to log into the app. When clicking on the add panel a popup is di
 
 ![Create Fridge Mockup](../images/createFridgeMockUp.png)
 
+### 2.1.3 Feature File
+```gherkin
+Feature: Overview Screen
+  The User is on the Fridge Overview Screen
+
+  Scenario: The User Joins Fridge
+    Given I see "overview"
+    When I tap the"join" label
+    Then I see screen "join"
+```
+
 ## 3. Special Requirements
 
 ### 3.1. Owning an account

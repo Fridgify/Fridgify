@@ -1,8 +1,8 @@
 # Fridgify
 
-## Use-Case Specification: Join Fridge
+## Use-Case Specification: Create Fridge
 
-## 1. Join Fridge
+## 1. Create Fridge
 
 ### 1.1 Brief Description
 
@@ -21,6 +21,17 @@ The user needs to log into the app. When clicking on the add panel a popup is di
 ### 2.1.2 Mock Up
 
 ![Create Fridge Mockup](../images/createFridgeMockUp.png)
+
+### 2.1.3 Feature File
+```gherkin
+Feature: Overview Screen
+  The User is on the Fridge Overview Screen
+
+  Scenario: The User Creates a Fridge
+    Given I see "overview"
+    When I tap the "new" label
+    Then i see popup "new"
+```
 
 ## 3. Special Requirements
 

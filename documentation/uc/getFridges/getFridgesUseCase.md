@@ -34,6 +34,22 @@ The app jumps instantaneously onto the main page if the user has already logged 
 
 **n/a**
 
+### 2.3 Feature File
+```gherkin
+Feature: Overview Screen
+  The User is on the Fridge Overview Screen
+
+  Scenario: The User opens a Fridge
+    Given I see "overview"
+    When I click the fridge
+    Then I see screen "fridge"
+
+  Scenario: The User opens Fridge Menu
+    Given I see "overview"
+    When I hold the fridge for 3 seconds
+    Then I expect update "fMenu"
+```
+
 ## 3. Special Requirements
 
 ### 3.1. Owning an account

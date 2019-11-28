@@ -38,33 +38,18 @@ An item can be added by scanning the barcode of an item. The user chooses the bu
 ### 2.1.3 Feature File
 
 ``` .feature
-Feature: Add Item
+Feature: Content Screen
+  The User is on the fridge content screen
+  
+  Scenario: I add item manual
+    Given I see screen "fridge"
+    When I tap the "manual" button
+    Then I see dropdown "addItem"
 
-Scenario: Choose "Add Item Manually"
-    When user is on "Content Overview"-Page
-    And user clicks on "Add Item Manually"-Button
-    Then show input box
-
-Scenario: Enter Valid Data
-    Given user filled in item name, unit, amount, expiry date correctly
-    And user is still on "Content Overview"-Page
-    When user submits form
-    Then send data to backend
-    And show new list
-
-Scenario: Enter Incomplete Data
-    Given user did not fill all required input fields
-    When user submits form
-    Then show error message
-    And mark missing boxes
-    And stay in view
-
-Scenario: Enter Invalid Data
-    Given user filled input boxes with incorrect value (expiry date as string)
-    When user submits form
-    Then show error message
-    And highlight wrong input
-    And stay in view
+  Scenario: I add item with scan
+    Given I see screen "fridge"
+    When I tap the "scan" button
+    Then I see screen "scan"
 ```
 
 ## 3. Special Requirements

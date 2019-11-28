@@ -22,6 +22,19 @@ The user needs to log into the app. He can then press and hold on one fridge. A 
 
 ![Remove Item from Fridge](../images/DeleteFridgeMockUp.png)
 
+### 2.1.3 Feature File
+
+```gherkin
+Feature: Overview Screen
+  The User is on the Fridge Overview Screen
+
+  Scenario: The User deletes Fridge
+    Given I see "overview"
+    When I hold the fridge for 3 seconds
+    And I tap the "delete" label
+    Then I see popup "delete"
+```
+
 ## 3. Special Requirements
 
 ### 3.1. Owning an account

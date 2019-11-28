@@ -22,6 +22,24 @@ After the user swipes left or right on an item in the fridge overview the curren
 
 ![Activity Diagram - Change Fridge Content Volume](../../images/changeContentVolumeMockUp.png)
 
+#### 2.1.3 Feature File
+```
+Feature: Content Screen
+  The User is on the fridge content screen
+
+  Scenario: I swipe left on item
+    Given I see screen "fridge"
+    And I see content "milk" is 1000
+    When I swipe left on "milk" 20 %
+    Then I see content "milk" is 800
+
+  Scenario: I swipe left on item to empty
+    Given I see screen "fridge"
+    And I see content "milk" is 1000
+    When I swipe left on "milk" 100 %
+    Then I see popup "milkEmpty"
+```
+
 ### 2.2 Alternativ Flow
 
 n/a

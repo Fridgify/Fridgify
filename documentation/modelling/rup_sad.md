@@ -3,7 +3,7 @@
 
 | **Date** | **Version** | **Description** | **Author** |
 | -------- | ----------- | --------------- | ---------- |
-| - | - | - | -|
+| 29.11.19 | 1.0.0 | Finalized Draft | Duc Vo Ngoc |
 | - | - | - | -|
 
 ## Table of Contents
@@ -85,4 +85,31 @@ Backend and frontend are being developed seperately, allowing them to live in a 
 
 ## 5 Logical View
 **Frontend Logical View:**
-![](../images/frontend_uml.png)
+![Frontend Logical View](./frontend_uml_mvc.svg)
+**Backend Logical View:**
+![Backend Logical View](./backend_uml_mvc.svg)
+
+## 5.2 Architecturally Significant Design Packages
+Structuring files is very important to keep a good overview of a projects resources. That is why the backend stores model files in **Fridgify_Backend.model**, controllers and utilities in **Fridgify_Backend.utils**, views are stored in **Fridgify_Backend.views** and url information are stored in **Fridgify_Backend.api_urls**.\
+In the frontend views are stored in the **Fridgify.screens**.
+
+## 6 Process View
+TBD
+
+## 7 Deployment View
+![Deployment View](./deployment.svg)
+
+## 8 Implementation View
+n/a
+
+## 9 Data View
+![Database Model](../database/generatedClassDiagram.png)
+
+## 10 Size and Performance
+n/a
+
+## 11 Quality/Metrics
+We are using TeamCity as Continuous Integration tool to ensure a high quality of code and automize the deployment process. Whenever there is a new change in the **develop** branch, tests are automatically run and tested. If the tests run through, they are taken *live* to the development server.\
+Whenever there is a new change in the **master** branch, a new docker image is being created on Docker Hub, where tests are also been run. After a successful build, the changes are taken live to the production server.\
+Each development or production change should fulfill the following requirements:
+* Test Coverage: Fridgify aims for at least **90 percent** code coverage

@@ -8,6 +8,14 @@ An URL could look like the following:\
 The request requires an **Authorization-Header**. The header contains the **API-Token**.
 
 An example response:
+The conditions for an item to qualify to a certain category are:
+
+- Fresh - The item was bought in the last 5 days
+- Due soon - The item's expires in less than 5 days
+- Over due - The item is expired
+- Total - The sum of fresh, dueSoon, overDue and all items not qualifying for any category
+
+It is therefore completly possible to have a total greater to the sum of fresh, dueSoon and overDue
 ```json
 {
     "fridges": [
@@ -15,13 +23,23 @@ An example response:
             "id": 2,
             "name": "Cool fridge",
             "description": "A cool fridge for me, myself and I",
-            "content": "tbd"
+            "content": {
+                "total": 20,
+                "fresh": 5,
+                "dueSoon": 4,
+                "overDue": 1
+            }
         },
         {
             "id": 200,
             "name": "Another cool fridge",
             "description": "Another cool fridge for me, myself and I",
-            "content": "tbd"
+            "content": {
+                "total": 8,
+                "fresh": 5,
+                "dueSoon": 2,
+                "overDue": 1
+            }
         }
     ]
 }

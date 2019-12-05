@@ -1,9 +1,9 @@
 # Workflow - /fridge/management/create/
 ### Workflow 1: Get fridges
-#### Step 1: POST /fridge/
+#### Step 1: GET /fridge/
 To list all fridges, make a **GET-Request** to */fridge/*.\
 An URL could look like the following:\
-`POST https://fridgapi.donkz.dev/fridge/`\
+`GET https://fridgapi.donkz.dev/fridge/`\
 
 The request requires an **Authorization-Header**. The header contains the **API-Token**.
 

@@ -54,6 +54,7 @@ Endpoint: /fridge/management/
         | - Backend-Token: String
         | JSON
         | - Fridge-Id: String
+        | - qr-code
         | Response:
         | 201
         | "Joined"
@@ -92,6 +93,13 @@ Endpoint: /fridge/management/
         | 200
         | "Left Successful"
 
+    QR-Code:
+        GET /fridge/management/qr-code?fridge-id=1
+        | HEADER: Backend-Token
+        | # Create an QR-Code 
+        | Response: 201, [Qr-Code]
+        
+    
 
 Endpoint: /fridge/item/
     !Get Item:
@@ -195,3 +203,17 @@ Endpoint: /stores/
         | Response
         | 201
         | - "Added"
+     
+Endpoint: /users/
+    GET /:
+        Get current user based on backend-token
+    GET /<fridge-id>:
+        Get all users for a fridge
+    PATCH /:
+        Change an attribute of current user
+    PATCH /<fridge-id>/<user-id>:
+        Change a role of a user if you are a fridge owner
+Rollen: 
+    Fridge Owner - Rollen Management, Löschen vom Fridge, Fridge bearbeiten (max. 1 Fridge Owner)
+    Fridge Manager - Leute hinzufügen, entfernen (n Fridge Manager)
+    Fridge User - Items hinzufügen, entfernen (n Fridge User)
